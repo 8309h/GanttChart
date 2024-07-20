@@ -46,7 +46,7 @@ const GanttChart = () => {
 
   return <>
   <h1>Gantt Chart of Construction Project</h1>
-  <div ref={ganttRef} id="GanntBYme"></div>;
+  <div ref={ganttRef} id="GanntBYme"></div>
 
   </>
 };
