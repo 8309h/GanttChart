@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
 import axios from 'axios';
 import GanttChart from './GanttChart';
-// import DetailedProcess from './DetailedProcess'
+import './App.css'
+import "./GanttChart.css"
 
 const App = () => {
   const [task, setTask] = useState('');
@@ -19,7 +20,8 @@ const App = () => {
   };
 
   return (
-    <div>
+    <>
+    <div class = 'container'>
       <h1>Construction Project Gantt Chart</h1>
       <form onSubmit={handleSubmit}>
         <div>
@@ -36,47 +38,18 @@ const App = () => {
         </div>
         <button type="submit">Add Task</button>
       </form>
-      <GanttChart />
       </div>
+
+      <div className="gantt-chart">
+        <GanttChart />
+      </div>
+
+
+    </>
+
+      
   );
 };
 
 export default App;
-
-
-
-
-// import React, { useState } from 'react';
-// import axios from 'axios';
-// import GanttChart from './GanttChart';
-// import DetailedProcess from './DetailedProcess';
-
-// const App = () => {
-//   const [startDate, setStartDate] = useState('2024-07-28');
-//   const length = 110; // Length of the wall
-//   const productivity = 2; // Feet per day
-//   const duration = length / productivity;
-
-//   const handleSubmit = async (e) => {
-//     e.preventDefault();
-//     await axios.post('http://localhost:5000/tasks', { task: 'Build Wall Compound', startDate, duration });
-//   };
-
-//   return (
-//     <div>
-//       <h1>Construction Project Gantt Chart</h1>
-//       <form onSubmit={handleSubmit}>
-//         <div>
-//           <label>Start Date: </label>
-//           <input type="date" value={startDate} onChange={(e) => setStartDate(e.target.value)} required />
-//         </div>
-//         <button type="submit">Add Task</button>
-//       </form>
-//       <GanttChart />
-//       <DetailedProcess />
-//     </div>
-//   );
-// };
-
-// export default App;
 
