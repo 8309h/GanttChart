@@ -1,6 +1,5 @@
 
-Video Explanation link :https://drive.google.com/file/d/1giEKNhCwWG1P2tgTJYQh7a8lgBxOs2TC/view?usp=sharing
-
+Explantion Video : https://drive.google.com/file/d/1giEKNhCwWG1P2tgTJYQh7a8lgBxOs2TC/view?usp=sharing
 
 deploy link: https://frontend-unlabg9jv-8309hs-projects.vercel.app 
 
